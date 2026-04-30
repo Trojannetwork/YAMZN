@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us — Yamasen Japanese Restaurant</title>
+  <meta name="description" content="Learn about Yamasen's philosophy — authentic Japanese dining, farm to table, and the circular food system powered by GAPPON Technology.">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .about-lead { font-family: var(--font-serif); font-size: clamp(24px, 4vw, 42px); font-weight: 300; line-height: 1.4; margin-bottom: 40px; }
+    .about-body { font-size: 16px; line-height: 1.9; color: var(--warm-gray); max-width: 800px; }
+    
+    /* Narrative Sections */
+    .narrative-block { margin-bottom: 64px; max-width: 800px; }
+    .narrative-block:last-child { margin-bottom: 0; }
+    .narrative-title { font-family: var(--font-serif); font-size: 24px; color: var(--ink); margin-bottom: 16px; font-weight: 400; }
+    .narrative-text { font-size: 15px; color: var(--warm-gray); line-height: 1.8; margin-bottom: 12px; }
+    .narrative-extra { font-size: 13px; color: var(--warm-gray); opacity: 0.7; font-style: italic; }
+
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; margin-top: 80px; }
+    
+    /* Values Redesign */
+    .values-list { display: flex; flex-direction: column; gap: 48px; margin-top: 48px; }
+    .value-item { display: grid; grid-template-columns: 80px 1fr; gap: 32px; align-items: start; }
+    .value-icon-circle { 
+      width: 80px; height: 80px; border-radius: 50%; border: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: center; font-size: 32px;
+      background: var(--rice);
+    }
+    .value-content { max-width: 700px; }
+    .value-title { font-family: var(--font-serif); font-size: 22px; margin-bottom: 12px; color: var(--ink); }
+    .value-desc { font-size: 15px; color: var(--warm-gray); line-height: 1.8; margin-bottom: 8px; }
+    .value-details { font-size: 13px; color: var(--warm-gray); opacity: 0.8; line-height: 1.6; }
+
+    .cycle-visual {
+      background: var(--matcha); color: white; padding: 48px;
+      display: flex; flex-direction: column; gap: 0; position: relative;
+    }
+    .cycle-step {
+      display: flex; align-items: center; gap: 20px;
+      padding: 20px 0; border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    .cycle-step:last-child { border: none; }
+    .cycle-num { font-family: var(--font-serif); font-size: 32px; color: rgba(255,255,255,0.2); flex-shrink: 0; width: 40px; }
+    .cycle-text { font-size: 14px; line-height: 1.7; color: rgba(255,255,255,0.85); }
+    .cycle-text strong { color: white; display: block; margin-bottom: 2px; }
+
+    @media (max-width: 768px) {
+      .value-item { grid-template-columns: 1fr; gap: 16px; }
+      .value-icon-circle { width: 64px; height: 64px; font-size: 24px; }
+    }
+  </style>
+</head>
+<body>
+  <div id="nav-placeholder"></div>
+
+  <header class="page-hero">
+    <span class="section-label" style="color:var(--primary);">私たちについて</span>
+    <h1>About Us</h1>
+    <p>Our Story · Philosophy · Circular Food System</p>
+  </header>
+
+  <main>
+    <!-- OUR STORY -->
+    <section>
+      <div class="container">
+        <span class="section-label reveal">Our Story</span>
+        <h2 class="about-lead reveal">Yamasen began with a simple belief: that food cooked with intention tastes better.</h2>
+        
+        <div class="narrative-block reveal">
+          <h3 class="narrative-title">The Origin</h3>
+          <p class="narrative-text">Nestled in Tank Hill Park with views over Kampala, Yamasen brings authentic Japanese cuisine to Uganda — not as a novelty, but as a living practice.</p>
+          <p class="narrative-text">Every dish is grounded in seasonal thinking, sourced locally where possible, and prepared with the care and discipline of traditional Japanese cooking.</p>
+          <p class="narrative-extra">Founded with a vision to bridge cultures through the universal language of high-quality, honest food.</p>
+        </div>
+
+        <div class="narrative-block reveal">
+          <h3 class="narrative-title">The Architecture</h3>
+          <p class="narrative-text">Our restaurant is designed to reflect the same balance we seek in our food: strength, simplicity, and a connection to the environment. The high vaulted wooden ceilings and open-air design allow the spirit of Kampala to flow through every meal.</p>
+          <div class="about-image-container">
+            <img src="../assets/images/caption.jpg" alt="Yamasen interior with high vaulted wooden ceiling" class="about-image" loading="lazy">
+          </div>
+          <p class="narrative-extra">Designed with local materials and traditional techniques, our space is as much a part of the experience as the menu itself.</p>
+        </div>
+
+        <div class="narrative-block reveal">
+          <h3 class="narrative-title">The Architecture</h3>
+          <p class="narrative-text">Our restaurant is designed to reflect the same balance we seek in our food: strength, simplicity, and a connection to the environment. The high vaulted wooden ceilings and open-air design allow the spirit of Kampala to flow through every meal.</p>
+          <div class="about-image-container">
+            <img src="../assets/images/about-interior.webp" alt="Yamasen interior with high vaulted wooden ceiling" class="about-image" loading="lazy">
+          </div>
+          <p class="narrative-extra">Designed with local materials and traditional techniques, our space is as much a part of the experience as the menu itself.</p>
+        </div>
+
+        <div class="narrative-block reveal">
+          <h3 class="narrative-title">The Name</h3>
+          <p class="narrative-text">Our name, 山仙 (Yamasen), means "mountain sage" — a person of wisdom and simplicity who lives in harmony with nature.</p>
+          <p class="narrative-text">It is both an aspiration and a direction: to cook thoughtfully, to waste nothing, and to serve food that nourishes both the body and the spirit.</p>
+          <p class="narrative-extra">The kanji 山 (yama) represents the mountains of Muyenga, while 仙 (sen) embodies our pursuit of culinary mastery.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- VALUES -->
+    <section style="background:var(--paper);padding:80px 0;">
+      <div class="container">
+        <span class="section-label reveal">What We Stand For</span>
+        <h2 class="section-title reveal">Our Values</h2>
+        <div class="section-line reveal"></div>
+        
+        <div class="values-list">
+          <div class="value-item reveal">
+            <div class="value-icon-circle" aria-hidden="true">🌿</div>
+            <div class="value-content">
+              <h3 class="value-title">Seasonal & Local</h3>
+              <p class="value-desc">We cook with what the season offers. Our menu changes with the harvest, not the other way around.</p>
+              <p class="value-details">By sourcing from local Ugandan farmers, we reduce our carbon footprint and ensure that every ingredient on your plate is at its peak flavor and nutritional value.</p>
+            </div>
+          </div>
+
+          <div class="value-item reveal">
+            <div class="value-icon-circle" aria-hidden="true">♻</div>
+            <div class="value-content">
+              <h3 class="value-title">Zero Waste</h3>
+              <p class="value-desc">Kitchen waste becomes feed and fertiliser through our GAPPON Technology partnership. Nothing leaves without purpose.</p>
+              <p class="value-details">Our circular food system transforms organic scraps into resources, closing the loop and contributing to a more sustainable future for Kampala's food ecosystem.</p>
+            </div>
+          </div>
+
+          <div class="value-item reveal">
+            <div class="value-icon-circle" aria-hidden="true">🎋</div>
+            <div class="value-content">
+              <h3 class="value-title">Honest Cooking</h3>
+              <p class="value-desc">No shortcuts. We follow traditional Japanese techniques — because they work, and because they show respect for the ingredient.</p>
+              <p class="value-details">From the precise cut of our sashimi to the slow-simmered depth of our dashi, we honor the time-tested methods that define authentic Japanese cuisine.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CIRCULAR FOOD SYSTEM -->
+    <section class="farm-section">
+      <div class="container">
+        <div class="about-grid">
+          <div class="farm-content">
+            <span class="section-label reveal">Yamasen × GAPPON Technology</span>
+            <h2 class="section-title reveal" style="font-style:italic;">From Kitchen to Farm and Back Again</h2>
+            <div class="section-line reveal"></div>
+            <p class="farm-desc reveal">A circular food system where black soldier flies transform kitchen waste into feed, fertiliser, and ingredients that return to our table. We call it the Yamasen Loop — a closed cycle where every meal we serve feeds the system that feeds us back.</p>
+            <p class="farm-desc reveal" style="margin-top:16px;">GAPPON Technology is our technology partner in this initiative, helping us measure, track, and optimise the loop from plate to farm and back.</p>
+          </div>
+          <div class="cycle-visual reveal">
+            <div class="cycle-step">
+              <div class="cycle-num">01</div>
+              <div class="cycle-text"><strong>Your meal is prepared</strong>Kitchen produce from local farms and our own growing programme.</div>
+            </div>
+            <div class="cycle-step">
+              <div class="cycle-num">02</div>
+              <div class="cycle-text"><strong>Waste is collected</strong>All kitchen scraps and organic waste are sorted and collected daily.</div>
+            </div>
+            <div class="cycle-step">
+              <div class="cycle-num">03</div>
+              <div class="cycle-text"><strong>Black soldier flies process it</strong>Larvae convert the waste into high-protein frass — naturally, in 24–48 hours.</div>
+            </div>
+            <div class="cycle-step">
+              <div class="cycle-num">04</div>
+              <div class="cycle-text"><strong>Feed & fertiliser return to farm</strong>The frass feeds livestock and enriches soil on our partner farms.</div>
+            </div>
+            <div class="cycle-step">
+              <div class="cycle-num">05</div>
+              <div class="cycle-text"><strong>Fresh ingredients come back</strong>Better-fed animals and richer soil produce better food — back on your plate.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM -->
+    <section style="padding:80px 0;">
+      <div class="container">
+        <span class="section-label reveal">Our Ecosystem</span>
+        <h2 class="section-title reveal">The Yamasen Family</h2>
+        <div class="section-line reveal"></div>
+        <div class="partners-grid reveal" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:2px;">
+          <div style="background:var(--paper);padding:32px;">
+            <div style="font-family:var(--font-serif);font-size:20px;margin-bottom:8px;">山仙 YAMASEN</div>
+            <div style="font-size:13px;color:var(--warm-gray);">Our flagship Japanese restaurant at Tank Hill Park. The heart of the ecosystem.</div>
+          </div>
+          <div style="background:var(--paper);padding:32px;">
+            <div style="font-family:var(--font-serif);font-size:20px;margin-bottom:8px;">FARM TO TABLE</div>
+            <div style="font-size:13px;color:var(--warm-gray);">Our farm-focused dining concept celebrating local produce and honest preparation.</div>
+          </div>
+          <div style="background:var(--paper);padding:32px;">
+            <div style="font-family:var(--font-serif);font-size:20px;margin-bottom:8px;">KLAFTS</div>
+            <div style="font-size:13px;color:var(--warm-gray);">Our third partner location — part of the shared loyalty and food network.</div>
+          </div>
+          <div style="background:var(--paper);padding:32px;">
+            <div style="font-family:var(--font-serif);font-size:20px;margin-bottom:8px;">Pan-Ya Bread</div>
+            <div style="font-size:13px;color:var(--warm-gray);">Artisan Japanese-style breads, a partner bakery in our loyalty programme.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-placeholder"></div>
+  <div class="toast" id="toast" role="alert" aria-live="polite"></div>
+  <script src="../js/main.js"></script>
+  <script src="../js/layout.js"></script>
+  <script>injectLayout(false);</script>
+</body>
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Menu — Yamasen Japanese Restaurant</title>
+  <meta name="description" content="Explore Yamasen's full food menu featuring authentic Japanese cuisine. Farm to table ingredients, seasonal specials, and signature dishes.">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .menu-category { margin-bottom: 8px; }
+    .menu-cat-title {
+      font-family: var(--font-serif); font-size: 11px; letter-spacing: 0.4em;
+      text-transform: uppercase; color: var(--warm-gray);
+      padding: 24px 0 16px; border-bottom: 1px solid var(--border);
+      margin-bottom: 1px;
+    }
+  </style>
+</head>
+<body>
+  <div id="nav-placeholder"></div>
+
+  <header class="page-hero">
+    <span class="section-label" style="color:var(--primary);">食事メニュー</span>
+    <h1>Food Menu</h1>
+    <p>Farm to table · Seasonal · Authentic Japanese</p>
+  </header>
+
+  <main>
+    <section class="menus-section">
+      <div class="container">
+        <div class="menu-tabs" role="tablist" aria-label="Menu categories">
+          <button class="menu-tab active" data-tab="starters" role="tab" aria-selected="true">Starters</button>
+          <button class="menu-tab" data-tab="mains" role="tab" aria-selected="false">Mains</button>
+          <button class="menu-tab" data-tab="sushi" role="tab" aria-selected="false">Sushi & Rolls</button>
+          <button class="menu-tab" data-tab="bento" role="tab" aria-selected="false">Bento</button>
+          <button class="menu-tab" data-tab="desserts" role="tab" aria-selected="false">Desserts</button>
+        </div>
+
+        <!-- STARTERS -->
+        <div id="starters" class="menu-panel active" role="tabpanel">
+          <div class="menu-category">
+            <div class="menu-cat-title">Small Plates</div>
+            <div class="menu-grid">
+              <article class="menu-item reveal">
+                <div class="menu-item-info">
+                  <div class="menu-item-name">Edamame</div>
+                  <div class="menu-item-jp">枝豆</div>
+                  <div class="menu-item-desc">Salted steamed young soybeans</div>
+                </div>
+                <div class="menu-item-price">8,000</div>
+              </article>
+              <article class="menu-item reveal">
+                <div class="menu-item-info">
+                  <div class="menu-item-name">Iburi Gakko</div>
+                  <div class="menu-item-jp">燻製がっこ</div>
+                  <div class="menu-item-desc">Smoked pickled daikon — Akita specialty. Limited daily.</div>
+                </div>
+                <div class="menu-item-price">14,000</div>
+              </article>
+              <article class="menu-item reveal">
+                <div class="menu-item-info">
+                  <div class="menu-item-name">Miso Soup</div>
+                  <div class="menu-item-jp">味噌汁</div>
+                  <div class="menu-item-desc">Tofu, wakame seaweed, spring onion</div>
+                </div>
+                <div class="menu-item-price">6,000</div>
+              </article>
+              <article class="menu-item reveal">
+                <div class="menu-item-info">
+                  <div class="menu-item-name">Gyoza</div>
+                  <div class="menu-item-jp">餃子</div>
+                  <div class="menu-item-desc">Pan-fried pork and cabbage dumplings, ponzu dipping sauce</div>
+                </div>
+                <div class="menu-item-price">18,000</div>
+              </article>
+              <article class="menu-item reveal">
+                <div class="menu-item-info">
+                  <div class="menu-item-name">Chicken Karaage</div>
+                  <div class="menu-item-jp">鶏唐揚げ</div>
+                  <div class="menu-item-desc">Crispy fried chicken, kewpie mayo, lemon</div>
+                </div>
+                <div class="menu-item-price">22,000</div>
+              </article>
+              <article class="menu-item reveal">
+                <div class="menu-item-info">
+                  <div class="menu-item-name">Agedashi Tofu</div>
+                  <div class="menu-item-jp">揚げ出し豆腐</div>
+                  <div class="menu-item-desc">Lightly fried tofu in dashi broth, daikon, bonito flakes</div>
+                </div>
+                <div class="menu-item-price">16,000</div>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <!-- MAINS -->
+        <div id="mains" class="menu-panel" role="tabpanel">
+          <div class="menu-grid">
+            <article class="menu-item reveal">
+              <div class="menu-item-info">
+                <div class="menu-item-name">Tonkotsu Ramen</div>
+                <div class="menu-item-jp">豚骨ラーメン</div>
+                <div class="menu-item-desc">Rich pork bone broth, chashu pork, soft egg, nori, bamboo shoots</div>
+              </div>
+              <div class="menu-item-price">32,000</div>
+            </article>
+            <article class="menu-item reveal">
+              <div class="menu-item-info">
+                <div class="menu-item-name">Chicken Teriyaki</div>
+                <div class="menu-item-jp">照り焼きチキン</div>
+                <div class="menu-item-desc">Grilled chicken thigh, house teriyaki glaze, steamed rice, miso soup</div>
+              </div>
+              <div class="menu-item-price">28,000</div>
+            </article>
+            <article class="menu-item reveal">
+              <div class="menu-item-info">
+                <div class="menu-item-name">Salmon Donburi</div>
+                <div class="menu-item-jp">サーモン丼</div>
+                <div class="menu-item-desc">Fresh salmon over seasoned rice, pickled ginger, cucumber, sesame</div>
+              </div>
+              <div class="menu-item-price">35,000</div>
+            </article>
+            <article class="menu-item reveal">
+              <div class="menu-item-info">
+                <div class="menu-item-name">Katsu Curry</div>
+                <div class="menu-item-jp">カツカレー</div>
+                <div class="menu-item-desc">Breaded pork cutlet on Japanese curry rice, fukujinzuke pickles</div>
+              </div>
+              <div class="menu-item-price">30,000</div>
+            </article>
+            <article class="menu-item reveal">
+              <div class="menu-item-info">
+                <div class="menu-item-name">Tempura Udon</div>
+                <div class="menu-item-jp">天ぷらうどん</div>
+                <div class="menu-item-desc">Thick udon noodles in dashi broth, prawn and vegetable tempura</div>
+              </div>
+              <div class="menu-item-price">34,000</div>
+            </article>
+            <article class="menu-item reveal">
+              <div class="menu-item-info">
+                <div class="menu-item-name">Omakase Special Dinner</div>
+                <div class="menu-item-jp">おまかせ</div>
+                <div class="menu-item-desc">Chef's seasonal tasting menu. Reservation required. For 2 persons.</div>
+              </div>
+              <div class="menu-item-price">From 180,000</div>
+            </article>
+          </div>
+        </div>
+
+        <!-- SUSHI -->
+        <div id="sushi" class="menu-panel" role="tabpanel">
+          <div class="menu-grid">
+            <article class="menu-item reveal">
+              <div class="menu-item-info">
+                <div class="menu-item-name">Salmon Nigiri (2 pcs)</div>
+                <div class="menu-item-jp">サーモン握り</div>
+                <div class="menu-item-desc">Hand-pressed sushi rice topped with fresh salmon</div>
+              </div>
+              <div class="menu-item-price">18,000</div>
+            </article>
+            <article class="menu-item reveal">
+              <div class="menu-item-info">
+                <div class="menu-item-name">Tuna Nigiri (2 pcs)</div>
+                <div class="menu-item-jp">マグロ握り</div>
+                <div class="menu-item-desc">Hand-pressed sushi rice with premium bluefin tuna</div>
+              </div>
+              <div class="menu-item-price">22,000</div>
+            </article>
+            <article class="menu-item reveal">
+              <div class="menu-item-info">
+                <div class="menu-item-name">Dragon Roll (8 pcs)</div>
+                <div class="menu-item-jp">ドラゴンロール</div>
+                <div class="menu-item-desc">Prawn tempura inside, avocado on top, eel sauce, sesame</div>
+              </div>
+              <div class="menu-item-price">38,000</div>
+            </article>
+            <article class="menu-item reveal">
+              <div class="menu-item-info">
+                <div class="menu-item-name">Spicy Tuna Roll (8 pcs)</div>
+                <div class="menu-item-jp">スパイシーツナ</div>
+                <div class="menu-item-desc">Tuna, spicy mayo, cucumber, tobiko</div>
+              </div>
+              <div class="menu-item-price">30,000</div>
+            </article>
+            <article class="menu-item reveal">
+              <div class="menu-item-info">
+                <div class="menu-item-name">Sashimi Selection (5 pcs)</div>
+                <div class="menu-item-jp">刺身</div>
+                <div class="menu-item-desc">Chef's selection of the freshest fish, shiso, wasabi, pickled ginger</div>
+              </div>
+              <div class="menu-item-price">45,000</div>
+            </article>
+          </div>
+        </div>
+
+        <!-- BENTO -->
+        <div id="bento" class="menu-panel" role="tabpanel">
+          <div class="menu-grid">
+            <article class="menu-item reveal">
+              <div class="menu-item-info">
+                <div class="menu-item-name">Yamasen Signature Bento</div>
+                <div class="menu-item-jp">山仙弁当</div>
+                <div class="menu-item-desc">Seasonal mains, rice, pickles, miso soup, daily dessert. Changes with the farm harvest.</div>
+              </div>
+              <div class="menu-item-price">35,000</div>
+            </article>
+            <article class="menu-item reveal">
+              <div class="menu-item-info">
+                <div class="menu-item-name">Teriyaki Chicken Bento</div>
+                <div class="menu-item-jp">照り焼き弁当</div>
+                <div class="menu-item-desc">Teriyaki chicken, rice, salad, gyoza (2 pcs), miso soup</div>
+              </div>
+              <div class="menu-item-price">30,000</div>
+            </article>
+            <article class="menu-item reveal">
+              <div class="menu-item-info">
+                <div class="menu-item-name">Vegetable Bento</div>
+                <div class="menu-item-jp">野菜弁当</div>
+                <div class="menu-item-desc">Seasonal vegetables, agedashi tofu, rice, pickles, miso soup</div>
+              </div>
+              <div class="menu-item-price">24,000</div>
+            </article>
+          </div>
+          <div style="margin-top:32px; padding:20px; background:var(--paper); border-left:2px solid var(--primary);">
+            <p style="font-size:13px; color:var(--warm-gray);">All bento boxes are available for delivery. <a href="delivery.html" style="color:var(--primary);">Order now →</a></p>
+          </div>
+        </div>
+
+        <!-- DESSERTS -->
+        <div id="desserts" class="menu-panel" role="tabpanel">
+          <div class="menu-grid">
+            <article class="menu-item reveal">
+              <div class="menu-item-info">
+                <div class="menu-item-name">Matcha Ice Cream</div>
+                <div class="menu-item-jp">抹茶アイス</div>
+                <div class="menu-item-desc">House-churned matcha ice cream, sweet red bean</div>
+              </div>
+              <div class="menu-item-price">12,000</div>
+            </article>
+            <article class="menu-item reveal">
+              <div class="menu-item-info">
+                <div class="menu-item-name">Mochi (3 pcs)</div>
+                <div class="menu-item-jp">餅</div>
+                <div class="menu-item-desc">Seasonal flavours — ask your server for today's selection</div>
+              </div>
+              <div class="menu-item-price">14,000</div>
+            </article>
+            <article class="menu-item reveal">
+              <div class="menu-item-info">
+                <div class="menu-item-name">Dorayaki</div>
+                <div class="menu-item-jp">どら焼き</div>
+                <div class="menu-item-desc">Fluffy pancake sandwiches with sweet red bean paste</div>
+              </div>
+              <div class="menu-item-price">10,000</div>
+            </article>
+          </div>
+        </div>
+
+        <p style="margin-top:40px; font-size:12px; color:var(--warm-gray); border-top:1px solid var(--border); padding-top:24px;">
+          All prices in UGX. Menu changes seasonally based on farm availability. Please inform our staff of any allergies.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-placeholder"></div>
+  <div class="toast" id="toast" role="alert" aria-live="polite"></div>
+  <script src="../js/main.js"></script>
+  <script src="../js/layout.js"></script>
+  <script>injectLayout(false);</script>
+</body>
+</html>

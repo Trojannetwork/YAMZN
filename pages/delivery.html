@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delivery Order — Yamasen Japanese Restaurant</title>
+  <meta name="description" content="Order authentic Japanese food for delivery from Yamasen, Muyenga. Bento boxes, ramen, sushi and more.">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div id="nav-placeholder"></div>
+
+  <header class="page-hero">
+    <span class="section-label" style="color:var(--primary);">デリバリー注文</span>
+    <h1>Delivery Order</h1>
+    <p>Est. 45–60 min · Muyenga & nearby areas</p>
+  </header>
+
+  <main>
+    <section class="order-section">
+      <div class="container">
+        <div class="delivery-layout">
+          <!-- ITEM SELECTION -->
+          <div>
+            <h2 style="font-family:var(--font-serif);font-size:24px;font-weight:300;margin-bottom:8px;" class="reveal">Select Your Items</h2>
+            <p style="font-size:13px;color:var(--warm-gray);margin-bottom:32px;" class="reveal">Adjust quantities then fill in your delivery details below.</p>
+
+            <div class="order-items reveal">
+              <div class="order-item-card" data-key="bento-sig" data-price="35000">
+                <div>
+                  <div class="order-item-label">Yamasen Signature Bento</div>
+                  <div class="order-item-price-sm">UGX 35,000</div>
+                </div>
+                <div class="qty-control">
+                  <button class="qty-btn" data-dir="down" aria-label="Decrease quantity">−</button>
+                  <span class="qty-val" aria-live="polite">0</span>
+                  <button class="qty-btn" data-dir="up" aria-label="Increase quantity">+</button>
+                </div>
+              </div>
+              <div class="order-item-card" data-key="bento-teri" data-price="30000">
+                <div>
+                  <div class="order-item-label">Teriyaki Chicken Bento</div>
+                  <div class="order-item-price-sm">UGX 30,000</div>
+                </div>
+                <div class="qty-control">
+                  <button class="qty-btn" data-dir="down" aria-label="Decrease quantity">−</button>
+                  <span class="qty-val" aria-live="polite">0</span>
+                  <button class="qty-btn" data-dir="up" aria-label="Increase quantity">+</button>
+                </div>
+              </div>
+              <div class="order-item-card" data-key="bento-veg" data-price="24000">
+                <div>
+                  <div class="order-item-label">Vegetable Bento</div>
+                  <div class="order-item-price-sm">UGX 24,000</div>
+                </div>
+                <div class="qty-control">
+                  <button class="qty-btn" data-dir="down" aria-label="Decrease quantity">−</button>
+                  <span class="qty-val" aria-live="polite">0</span>
+                  <button class="qty-btn" data-dir="up" aria-label="Increase quantity">+</button>
+                </div>
+              </div>
+              <div class="order-item-card" data-key="ramen" data-price="32000">
+                <div>
+                  <div class="order-item-label">Tonkotsu Ramen</div>
+                  <div class="order-item-price-sm">UGX 32,000</div>
+                </div>
+                <div class="qty-control">
+                  <button class="qty-btn" data-dir="down" aria-label="Decrease quantity">−</button>
+                  <span class="qty-val" aria-live="polite">0</span>
+                  <button class="qty-btn" data-dir="up" aria-label="Increase quantity">+</button>
+                </div>
+              </div>
+              <div class="order-item-card" data-key="karaage" data-price="22000">
+                <div>
+                  <div class="order-item-label">Chicken Karaage</div>
+                  <div class="order-item-price-sm">UGX 22,000</div>
+                </div>
+                <div class="qty-control">
+                  <button class="qty-btn" data-dir="down" aria-label="Decrease quantity">−</button>
+                  <span class="qty-val" aria-live="polite">0</span>
+                  <button class="qty-btn" data-dir="up" aria-label="Increase quantity">+</button>
+                </div>
+              </div>
+              <div class="order-item-card" data-key="gyoza" data-price="18000">
+                <div>
+                  <div class="order-item-label">Gyoza (6 pcs)</div>
+                  <div class="order-item-price-sm">UGX 18,000</div>
+                </div>
+                <div class="qty-control">
+                  <button class="qty-btn" data-dir="down" aria-label="Decrease quantity">−</button>
+                  <span class="qty-val" aria-live="polite">0</span>
+                  <button class="qty-btn" data-dir="up" aria-label="Increase quantity">+</button>
+                </div>
+              </div>
+              <div class="order-item-card" data-key="katsu" data-price="30000">
+                <div>
+                  <div class="order-item-label">Katsu Curry</div>
+                  <div class="order-item-price-sm">UGX 30,000</div>
+                </div>
+                <div class="qty-control">
+                  <button class="qty-btn" data-dir="down" aria-label="Decrease quantity">−</button>
+                  <span class="qty-val" aria-live="polite">0</span>
+                  <button class="qty-btn" data-dir="up" aria-label="Increase quantity">+</button>
+                </div>
+              </div>
+              <div class="order-item-card" data-key="iburi" data-price="14000">
+                <div>
+                  <div class="order-item-label">Iburi Gakko (Special)</div>
+                  <div class="order-item-price-sm">UGX 14,000</div>
+                </div>
+                <div class="qty-control">
+                  <button class="qty-btn" data-dir="down" aria-label="Decrease quantity">−</button>
+                  <span class="qty-val" aria-live="polite">0</span>
+                  <button class="qty-btn" data-dir="up" aria-label="Increase quantity">+</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- DELIVERY FORM -->
+            <div class="form-card reveal" style="margin-top:40px;">
+              <div class="form-card-title">Delivery Details</div>
+              <div class="form-card-subtitle">We will call to confirm before dispatching</div>
+              <form id="deliveryForm" novalidate aria-label="Delivery order form">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label class="form-label" for="del-name">Full Name *</label>
+                    <input class="form-input" type="text" id="del-name" name="name" required placeholder="Your name">
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="del-phone">Phone Number *</label>
+                    <input class="form-input" type="tel" id="del-phone" name="phone" required placeholder="+256 700 000 000">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="del-addr">Delivery Address *</label>
+                  <input class="form-input" type="text" id="del-addr" name="address" required placeholder="Street, area, landmark...">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="del-area">Area / Zone</label>
+                  <select class="form-select" id="del-area" name="area">
+                    <option value="">Select area</option>
+                    <option>Muyenga</option>
+                    <option>Kabalagala</option>
+                    <option>Kisugu</option>
+                    <option>Ggaba</option>
+                    <option>Bukoto</option>
+                    <option>Other (call to confirm)</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="del-payment">Payment Method</label>
+                  <select class="form-select" id="del-payment" name="payment">
+                    <option>MTN Mobile Money</option>
+                    <option>Airtel Money</option>
+                    <option>Cash on Delivery</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="del-notes">Special Instructions</label>
+                  <textarea class="form-textarea" id="del-notes" name="notes" placeholder="Allergies, gate instructions, extra requests..."></textarea>
+                </div>
+                <input type="hidden" name="order_total" id="del-total-hidden">
+                <button type="submit" class="form-submit">Place Delivery Order</button>
+                <div class="form-msg" role="alert"></div>
+              </form>
+            </div>
+          </div>
+
+          <!-- STICKY SUMMARY -->
+          <div class="sticky-summary reveal">
+            <div class="summary-card">
+              <div class="summary-title">Your Order</div>
+              <div id="summaryItems">
+                <div style="font-size:13px;color:rgba(245,240,232,0.4);text-align:center;padding:16px 0;">No items selected yet</div>
+              </div>
+              <div style="border-top:1px solid rgba(255,255,255,0.1);margin-top:16px;padding-top:16px;">
+                <div style="display:flex;justify-content:space-between;align-items:center;">
+                  <span class="order-total-label">Total</span>
+                  <span class="order-total-val" id="orderTotal">—</span>
+                </div>
+                <div style="font-size:11px;color:rgba(245,240,232,0.3);margin-top:8px;">+ delivery fee (varies by area)</div>
+              </div>
+            </div>
+            <div style="margin-top:16px;padding:20px;border:1px solid var(--border);background:var(--rice);">
+              <div style="font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--warm-gray);margin-bottom:8px;">Delivery Hours</div>
+              <div style="font-size:13px;">Mon – Sun · 10:00 – 21:30</div>
+              <div style="font-size:11px;color:var(--warm-gray);margin-top:8px;">Est. 45–60 minutes</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-placeholder"></div>
+  <div class="toast" id="toast" role="alert" aria-live="polite"></div>
+  <script src="../js/main.js"></script>
+  <script src="../js/layout.js"></script>
+  <script>injectLayout(false);</script>
+  <script>
+    // Update summary panel dynamically
+    const ITEM_LABELS = {
+      'bento-sig':'Yamasen Signature Bento','bento-teri':'Teriyaki Chicken Bento',
+      'bento-veg':'Vegetable Bento','ramen':'Tonkotsu Ramen','karaage':'Chicken Karaage',
+      'gyoza':'Gyoza','katsu':'Katsu Curry','iburi':'Iburi Gakko'
+    };
+    function updateSummary() {
+      const items = window.orderItems || {};
+      const container = document.getElementById('summaryItems');
+      const lines = Object.entries(items).filter(([,v]) => v.qty > 0);
+      if (!lines.length) {
+        container.innerHTML = '<div style="font-size:13px;color:rgba(245,240,232,0.4);text-align:center;padding:16px 0;">No items selected yet</div>';
+      } else {
+        container.innerHTML = lines.map(([k, {qty, price}]) =>
+          `<div class="summary-item"><span>${ITEM_LABELS[k] || k} ×${qty}</span><span>UGX ${(qty*price).toLocaleString()}</span></div>`
+        ).join('');
+      }
+      const total = lines.reduce((sum,[,{qty,price}]) => sum+qty*price, 0);
+      document.getElementById('del-total-hidden').value = total;
+    }
+  </script>
+</body>
+</html>
