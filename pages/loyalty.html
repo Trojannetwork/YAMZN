@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loyalty Card — Yamasen Japanese Restaurant</title>
+  <meta name="description" content="Join Yamasen's loyalty membership. Earn stamps, win prizes including Omakase dinner, vouchers and more.">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .stamp-card {
+      background: var(--ink); color: var(--rice);
+      padding: 48px; border-radius: 4px; position: relative; overflow: hidden;
+      margin-bottom: 40px;
+    }
+    .stamp-card::before {
+      content: '山仙'; position: absolute; right: -20px; top: -30px;
+      font-family: var(--font-serif); font-size: 160px; opacity: 0.04;
+      color: white; pointer-events: none; line-height: 1;
+    }
+    .stamp-grid {
+      display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin: 32px 0;
+    }
+    .stamp {
+      aspect-ratio: 1; border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      font-family: var(--font-serif); font-size: 20px; color: rgba(255,255,255,0.2);
+      transition: all 0.3s; cursor: default;
+    }
+    .stamp.filled { border-color: var(--primary); color: var(--primary); }
+    .stamp.lottery { border-color: var(--primary); background: rgba(136,0,0,0.1); color: var(--primary); }
+    .how-steps { display: grid; grid-template-columns: repeat(3,1fr); gap: 32px; margin-top: 48px; }
+    .how-step { text-align: center; }
+    .how-num { font-family: var(--font-serif); font-size: 48px; color: var(--primary); opacity: 0.4; margin-bottom: 12px; }
+    .how-title { font-size: 14px; font-weight: 400; margin-bottom: 8px; }
+    .how-desc { font-size: 13px; color: var(--warm-gray); line-height: 1.7; }
+    .partners-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 2px; margin-top: 40px; }
+    .partner-card { background: var(--paper); padding: 32px 24px; text-align: center; }
+    .partner-card-name { font-family: var(--font-serif); font-size: 20px; margin-bottom: 8px; }
+    .partner-card-desc { font-size: 12px; color: var(--warm-gray); }
+  </style>
+</head>
+<body>
+  <div id="nav-placeholder"></div>
+
+  <header class="page-hero">
+    <span class="section-label" style="color:var(--primary);">ポイントカード</span>
+    <h1>Loyalty Membership</h1>
+    <p>Earn stamps · Win prizes · Join the community</p>
+  </header>
+
+  <main>
+    <section>
+      <div class="container">
+
+        <!-- STAMP CARD DEMO -->
+        <div class="stamp-card reveal">
+          <div style="font-size:10px;letter-spacing:0.3em;text-transform:uppercase;color:var(--primary);margin-bottom:8px;">Your Loyalty Card</div>
+          <div style="font-family:var(--font-serif);font-size:28px;margin-bottom:4px;">山仙 YAMASEN</div>
+          <div style="font-size:12px;color:rgba(245,240,232,0.4);letter-spacing:0.15em;">FARM TO TABLE · KLAFTS · YAMASEN</div>
+          <div class="stamp-grid" aria-label="Stamp progress — 7 of 10 collected">
+            <div class="stamp filled" aria-label="Stamp 1 collected">山</div>
+            <div class="stamp filled" aria-label="Stamp 2 collected">仙</div>
+            <div class="stamp filled" aria-label="Stamp 3 collected">山</div>
+            <div class="stamp filled" aria-label="Stamp 4 collected">仙</div>
+            <div class="stamp filled" aria-label="Stamp 5 collected">山</div>
+            <div class="stamp filled" aria-label="Stamp 6 collected">仙</div>
+            <div class="stamp filled" aria-label="Stamp 7 collected">山</div>
+            <div class="stamp" aria-label="Stamp 8 — not yet collected">8</div>
+            <div class="stamp" aria-label="Stamp 9 — not yet collected">9</div>
+            <div class="stamp lottery" aria-label="Stamp 10 — lottery draw">🎯</div>
+          </div>
+          <div style="font-size:13px;color:rgba(245,240,232,0.6);">Earn 1 stamp per UGX 30,000 spent. Every 10 stamps = 1 lottery draw.</div>
+        </div>
+
+        <!-- HOW IT WORKS -->
+        <span class="section-label reveal">How It Works</span>
+        <div class="how-steps">
+          <div class="how-step reveal">
+            <div class="how-num">01</div>
+            <div class="how-title">Get Your Card</div>
+            <div class="how-desc">Pick up a physical loyalty card from the counter at any of our three partner locations. It's free.</div>
+          </div>
+          <div class="how-step reveal">
+            <div class="how-num">02</div>
+            <div class="how-title">Earn Stamps</div>
+            <div class="how-desc">Spend UGX 30,000 at any visit to earn 1 stamp. Stamps are valid across Yamasen, FARM TO TABLE, and KLAFTS.</div>
+          </div>
+          <div class="how-step reveal">
+            <div class="how-num">03</div>
+            <div class="how-title">Win Prizes</div>
+            <div class="how-desc">Every 10 stamps earns you a lottery draw. Prizes range from bread to an Omakase dinner for two.</div>
+          </div>
+        </div>
+
+        <!-- PRIZES -->
+        <div style="margin-top:64px;">
+          <span class="section-label reveal">Lottery Prizes</span>
+          <h2 class="section-title reveal">What You Could Win</h2>
+          <div class="section-line reveal"></div>
+          <ul class="prize-list reveal" style="max-width:600px;" role="list">
+            <li class="prize-item">
+              <span class="prize-rank" aria-label="1st Prize">1</span>
+              <div>
+                <div class="prize-name">OMAKASE Special Dinner for 2 Persons</div>
+                <div style="font-size:12px;color:var(--warm-gray);margin-top:4px;">Our most exclusive experience — chef's seasonal tasting menu for two, fully curated.</div>
+              </div>
+            </li>
+            <li class="prize-item">
+              <span class="prize-rank" aria-label="2nd Prize">2</span>
+              <div>
+                <div class="prize-name">50,000 UGX YAMASEN Voucher</div>
+                <div style="font-size:12px;color:var(--warm-gray);margin-top:4px;">Valid at any of our three locations.</div>
+              </div>
+            </li>
+            <li class="prize-item">
+              <span class="prize-rank" aria-label="3rd Prize">3</span>
+              <div>
+                <div class="prize-name">10,000 UGX YAMASEN Voucher</div>
+              </div>
+            </li>
+            <li class="prize-item">
+              <span class="prize-rank" aria-label="4th Prize">4</span>
+              <div>
+                <div class="prize-name">Pick Your Favourite Pan-Ya Bread</div>
+                <div style="font-size:12px;color:var(--warm-gray);margin-top:4px;">A selection from our partner artisan bakery.</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- PARTNER LOCATIONS -->
+        <div style="margin-top:64px;">
+          <span class="section-label reveal">Partner Locations</span>
+          <h2 class="section-title reveal">Earn Stamps at All Three</h2>
+          <div class="section-line reveal"></div>
+          <div class="partners-grid">
+            <div class="partner-card reveal">
+              <div class="partner-card-name">山仙 YAMASEN</div>
+              <div class="partner-card-desc">Japanese Restaurant<br>Tank Hill Park, Muyenga</div>
+            </div>
+            <div class="partner-card reveal">
+              <div class="partner-card-name">FARM TO TABLE</div>
+              <div class="partner-card-desc">Farm-fresh dining<br>Kampala</div>
+            </div>
+            <div class="partner-card reveal">
+              <div class="partner-card-name">KLAFTS</div>
+              <div class="partner-card-desc">Partner location<br>Kampala</div>
+            </div>
+          </div>
+          <div class="stamp-info reveal" style="margin-top:2px;padding:24px;background:var(--ink);color:var(--rice);font-size:13px;line-height:1.8;">
+            Please feel free to ask our staff about the Loyalty Card at any of the above locations. Cards and stamp records are managed manually at the counter.
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-placeholder"></div>
+  <div class="toast" id="toast" role="alert" aria-live="polite"></div>
+  <script src="../js/main.js"></script>
+  <script src="../js/layout.js"></script>
+  <script>injectLayout(false);</script>
+</body>
+</html>

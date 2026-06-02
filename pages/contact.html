@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Yamasen Japanese Restaurant</title>
+  <meta name="description" content="Contact Yamasen Japanese Restaurant in Muyenga, Kampala. Make enquiries, give feedback, or reach our team.">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div id="nav-placeholder"></div>
+
+  <header class="page-hero">
+    <span class="section-label" style="color:var(--primary);">お問い合わせ</span>
+    <h1>Contact</h1>
+    <p>Enquiries · Feedback · Reservations</p>
+  </header>
+
+  <main>
+    <section>
+      <div class="container">
+        <div class="contact-layout">
+          <!-- CONTACT FORM -->
+          <div>
+            <div class="form-card reveal">
+              <div class="form-card-title">Send Us a Message</div>
+              <div class="form-card-subtitle">We reply within 24 hours · Mon–Sun</div>
+              <form id="contactForm" novalidate aria-label="Contact form">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label class="form-label" for="con-name">Your Name *</label>
+                    <input class="form-input" type="text" id="con-name" name="name" required autocomplete="name" placeholder="Full name">
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="con-phone">Phone</label>
+                    <input class="form-input" type="tel" id="con-phone" name="phone" autocomplete="tel" placeholder="+256 700 000 000">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="con-email">Email Address *</label>
+                  <input class="form-input" type="email" id="con-email" name="email" required autocomplete="email" placeholder="you@example.com">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="con-subject">Subject</label>
+                  <select class="form-select" id="con-subject" name="subject">
+                    <option>General enquiry</option>
+                    <option>Reservation question</option>
+                    <option>Private event / group booking</option>
+                    <option>Feedback</option>
+                    <option>Loyalty card</option>
+                    <option>Partnership / press</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="con-msg">Message *</label>
+                  <textarea class="form-textarea" id="con-msg" name="message" required rows="5" placeholder="How can we help you?"></textarea>
+                </div>
+                <button type="submit" class="form-submit">Send Message</button>
+                <div class="form-msg" role="alert"></div>
+              </form>
+            </div>
+          </div>
+
+          <!-- CONTACT DETAILS -->
+          <div class="reveal">
+            <div class="contact-details">
+              <div class="contact-detail-row">
+                <span class="contact-detail-icon" aria-hidden="true">📍</span>
+                <div>
+                  <div class="contact-detail-label">Address</div>
+                  <div class="contact-detail-val">Tank Hill Park, Tank Hill Road<br>Muyenga, Kampala, Uganda</div>
+                </div>
+              </div>
+              <div class="contact-detail-row">
+                <span class="contact-detail-icon" aria-hidden="true">📞</span>
+                <div>
+                  <div class="contact-detail-label">Phone</div>
+                  <div class="contact-detail-val"><a href="tel:+2560707808010">+256 0707 808 010</a></div>
+                </div>
+              </div>
+              <div class="contact-detail-row">
+                <span class="contact-detail-icon" aria-hidden="true">🕐</span>
+                <div>
+                  <div class="contact-detail-label">Opening Hours</div>
+                  <div class="contact-detail-val">Mon – Sun &nbsp;·&nbsp; 9:00 – 23:00</div>
+                </div>
+              </div>
+              <div class="contact-detail-row">
+                <span class="contact-detail-icon" aria-hidden="true">💬</span>
+                <div>
+                  <div class="contact-detail-label">WhatsApp</div>
+                  <div class="contact-detail-val">
+                    <a href="https://wa.me/2560707808010" target="_blank" rel="noopener" style="color:var(--matcha);">Message us on WhatsApp →</a>
+                  </div>
+                </div>
+              </div>
+              <div class="contact-detail-row">
+                <span class="contact-detail-icon" aria-hidden="true">🗺</span>
+                <div>
+                  <div class="contact-detail-label">Directions</div>
+                  <div class="contact-detail-val">
+                    <a href="https://maps.google.com/?q=Tank+Hill+Park+Muyenga+Kampala" target="_blank" rel="noopener" style="color:var(--primary);">Open in Google Maps →</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div style="margin-top:32px;padding:28px;background:var(--paper);border:1px solid var(--border);">
+              <div style="font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--warm-gray);margin-bottom:12px;">For Private Events</div>
+              <p style="font-size:13px;color:var(--warm-gray);line-height:1.8;">Interested in hosting a private dinner, team event, or celebration at Yamasen? We accommodate groups and can arrange special menus. Please call us directly or use the form above.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-placeholder"></div>
+  <div class="toast" id="toast" role="alert" aria-live="polite"></div>
+  <script src="../js/main.js"></script>
+  <script src="../js/layout.js"></script>
+  <script>injectLayout(false);</script>
+</body>
+</html>

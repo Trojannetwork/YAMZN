@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Menu — Yamasen Japanese Restaurant</title>
+  <meta name="description" content="Explore Yamasen's full food menu featuring authentic Japanese cuisine. Farm to table ingredients, seasonal specials, and signature dishes.">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div id="nav-placeholder"></div>
+
+  <header class="page-hero">
+    <span class="section-label" style="color:var(--primary);">食事メニュー</span>
+    <h1>Food Menu</h1>
+    <p>Farm to table · Seasonal · Authentic Japanese</p>
+  </header>
+
+  <main>
+    <section class="menu-experience-section">
+      <div class="container">
+        <div class="menu-intro reveal">
+          <div>
+            <span class="section-label" style="color:var(--primary);">Curated Experience</span>
+            <h2 class="section-title" style="margin-bottom:16px;">Elegant, image-led storytelling without losing the quiet Yamasen feel.</h2>
+            <p class="about-body" style="max-width:60ch;">The menu now flows through layered food photography, softer transitions, and clearer grouping so guests can browse more intuitively while still feeling the same restrained, premium atmosphere.</p>
+          </div>
+          <div class="menu-intro-side">
+            <p class="menu-intro-note">Soft gradients, glass-like overlays, and quick micro-interactions give the page a more immersive rhythm while keeping the typography, spacing, and palette minimal.</p>
+            <div class="menu-intro-actions">
+              <a href="reservation.html" class="btn btn-primary">Reserve a Table</a>
+              <a href="delivery.html" class="btn btn-outline">Delivery Order</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="blend-stage reveal">
+          <div class="blend-hero">
+            <div class="blend-hero-copy">
+              <div class="blend-kicker">Blending Image Section</div>
+              <h3>Architecture, farm ingredients, and plated dishes now blend into the browsing journey.</h3>
+              <p>The effect stays subtle: layered imagery, restrained motion, and soft overlays that feel integrated into the page rather than dropped in as separate blocks.</p>
+            </div>
+          </div>
+
+          <div class="blend-side-grid">
+            <article class="blend-tile">
+              <img loading="lazy" decoding="async" src="../assets/images/FARM_1.jpeg" alt="Seasonal farm produce for Yamasen dishes">
+              <div class="blend-tile-copy">
+                <span>Farm</span>
+                <strong>Seasonal produce at the source</strong>
+              </div>
+            </article>
+            <article class="blend-tile">
+              <img loading="lazy" decoding="async" src="../assets/images/YAMASEN MENU PHOTOS/ramen_soup_noodle/Pork SOY Sauce RAMEN.png" alt="Pork soy sauce ramen">
+              <div class="blend-tile-copy">
+                <span>Signature Bowl</span>
+                <strong>Warm depth with a cleaner visual focus</strong>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="featured-strip reveal">
+          <div class="featured-strip-head">
+            <div>
+              <span class="section-label" style="color:var(--primary);">Featured Highlights</span>
+              <h2 class="section-title" style="margin:10px 0 0;">A few dishes brought forward to guide attention.</h2>
+            </div>
+            <p class="featured-strip-copy">Featured cards add light hierarchy before the full menu, helping guests discover a few signatures first while the larger categories remain clean and easy to scan.</p>
+          </div>
+
+          <div class="featured-grid">
+            <article class="feature-card">
+              <div class="feature-badge">Fresh Pick</div>
+              <img loading="lazy" decoding="async" src="../assets/images/YAMASEN MENU PHOTOS/salad/FARM TO TABLE.png" alt="Farm to Table Salad">
+              <div class="feature-card-body">
+                <div class="feature-card-top">
+                  <h3>Farm to Table Salad</h3>
+                  <span>38k</span>
+                </div>
+                <p>Seasonal greens and a lighter opening note that reflects the farm-to-table identity of the restaurant.</p>
+              </div>
+            </article>
+
+            <article class="feature-card">
+              <div class="feature-badge">Signature</div>
+              <img loading="lazy" decoding="async" src="../assets/images/YAMASEN MENU PHOTOS/ramen_soup_noodle/Pork SOY Sauce RAMEN.png" alt="Pork soy sauce ramen">
+              <div class="feature-card-body">
+                <div class="feature-card-top">
+                  <h3>Pork Soy Sauce Ramen</h3>
+                  <span>45k</span>
+                </div>
+                <p>A rich, comforting bowl surfaced early in the flow so guests immediately spot one of the most inviting mains.</p>
+              </div>
+            </article>
+
+            <article class="feature-card">
+              <div class="feature-badge">House Favorite</div>
+              <img loading="lazy" decoding="async" src="../assets/images/YAMASEN MENU PHOTOS/yamazen_fried_chiken/YFC Plate .png" alt="YFC plate with potato wedges">
+              <div class="feature-card-body">
+                <div class="feature-card-top">
+                  <h3>YFC Plate</h3>
+                  <span>40k</span>
+                </div>
+                <p>Crisp, playful, and slightly bolder, this gives the page a modern focal point without disrupting the overall minimal style.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="menus-section">
+      <div class="container">
+        <div class="menu-tabs" role="tablist" aria-label="Menu categories">
+          <button class="menu-tab active" data-tab="appetizers" role="tab" aria-selected="true">Starters & Soups</button>
+          <button class="menu-tab" data-tab="sushi" role="tab" aria-selected="false">Sushi & Sashimi</button>
+          <button class="menu-tab" data-tab="platters" role="tab" aria-selected="false">Platters</button>
+          <button class="menu-tab" data-tab="bowls" role="tab" aria-selected="false">Bowls & Noodles</button>
+          <button class="menu-tab" data-tab="sets" role="tab" aria-selected="false">Sets & Bento</button>
+          <button class="menu-tab" data-tab="specials" role="tab" aria-selected="false">Specials</button>
+        </div>
+
+        <!-- STARTERS & SOUPS -->
+        <div id="appetizers" class="menu-panel active" role="tabpanel">
+          <div class="menu-category">
+            <div class="menu-cat-title">STARTERS</div>
+            <div class="menu-grid">
+              <article class="menu-item reveal">
+                <div class="menu-item-image"><img loading="lazy" decoding="async" src="../assets/images/YAMASEN MENU PHOTOS/starters /" alt="Spring Rolls"></div>
+                <div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Spring Rolls</div></div><div class="menu-item-price">21k</div></div></div>
+              </article>
+              <article class="menu-item reveal">
+                <div class="menu-item-image"><img loading="lazy" decoding="async" src="../assets/images/YAMASEN MENU PHOTOS/starters /Fried Cassava.png" alt="Fried Cassava"></div>
+                <div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Fried Cassava</div><div class="menu-item-jp">Japanese DASHI</div></div><div class="menu-item-price">21k</div></div></div>
+              </article>
+              <article class="menu-item reveal">
+                <div class="menu-item-image"><img loading="lazy" decoding="async" src="../assets/images/YAMASEN MENU PHOTOS/starters /SATSUMA_AGE Fish Cakes.png" alt="Satsuma-age Fish Cakes"></div>
+                <div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">SATSUMA-AGE Fish Cakes</div><div class="menu-item-jp">Nile Perch</div></div><div class="menu-item-price">21k</div></div></div>
+              </article>
+              <article class="menu-item reveal">
+                <div class="menu-item-image"><img loading="lazy" decoding="async" src="../assets/images/YAMASEN MENU PHOTOS/starters /DASHIMAKI Omelette.png" alt="Dashimaki Omelette"></div>
+                <div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">DASHIMAKI Omelette</div><div class="menu-item-jp">YAMASEN Style</div></div><div class="menu-item-price">21k</div></div></div>
+              </article>
+              <article class="menu-item reveal">
+                <div class="menu-item-image"><img loading="lazy" decoding="async" src="../assets/images/YAMASEN MENU PHOTOS/starters /Crunchy Tilapia.png" alt="Crunchy Tilapia"></div>
+                <div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Crunchy Tilapia</div></div><div class="menu-item-price">28k</div></div></div>
+              </article>
+              <article class="menu-item reveal">
+                <div class="menu-item-image"><img loading="lazy" decoding="async" src="../assets/images/steamed_pork.jpg" alt="Cold Steamed Pork"></div>
+                <div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Cold Steamed Pork</div></div><div class="menu-item-price">28k</div></div></div>
+              </article>
+              <article class="menu-item reveal">
+                <div class="menu-item-image"><img loading="lazy" decoding="async" src="../assets/images/liver_pate.jpg" alt="Chicken Liver Pate"></div>
+                <div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Chicken Liver Pate</div></div><div class="menu-item-price">28k</div></div></div>
+              </article>
+              <article class="menu-item reveal">
+                <div class="menu-item-image"><img loading="lazy" decoding="async" src="../assets/images/pork_gyoza.jpg" alt="Pork Gyoza Dumpling"></div>
+                <div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Pork GYOZA Dumpling</div></div><div class="menu-item-price">28k</div></div></div>
+              </article>
+              <article class="menu-item reveal">
+                <div class="menu-item-image"><img loading="lazy" decoding="async" src="../assets/images/fish_gyoza.jpg" alt="Fish Gyoza Dumpling"></div>
+                <div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Fish GYOZA Dumpling</div></div><div class="menu-item-price">28k</div></div></div>
+              </article>
+            </div>
+          </div>
+
+          <div class="menu-category">
+            <div class="menu-cat-title">SALAD</div>
+            <div class="menu-grid">
+              <article class="menu-item reveal">
+                <div class="menu-item-image"><img loading="lazy" decoding="async" src="../assets/images/YAMASEN MENU PHOTOS/salad/FARM TO TABLE.png" alt="Farm to Table Salad"></div>
+                <div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Farm to Table Salad</div></div><div class="menu-item-price">38k</div></div></div>
+              </article>
+              <article class="menu-item reveal">
+                <div class="menu-item-image"><img loading="lazy" decoding="async" src="../assets/images/YAMASEN MENU PHOTOS/salad/" alt="Edna's Herb Salad"></div>
+                <div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Edna's Herb Salad</div></div><div class="menu-item-price">35k</div></div></div>
+              </article>
+              <article class="menu-item reveal">
+                <div class="menu-item-image"><img loading="lazy" decoding="async" src="../assets/images/wakame_salad.jpg" alt="Wakame Seaweed Salad"></div>
+                <div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">WAKAME Seaweed Salad</div></div><div class="menu-item-price">35k</div></div></div>
+              </article>
+              <article class="menu-item reveal">
+                <div class="menu-item-image"><img loading="lazy" decoding="async" src="../assets/images/YAMASEN MENU PHOTOS/salad/Roasted Beef with Kira Farm Greens.png" alt="Roasted Beef with Kira Farm Greens"></div>
+                <div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Roasted Beef with Kira Farm Greens</div></div><div class="menu-item-price">36k</div></div></div>
+              </article>
+              <article class="menu-item reveal">
+                <div class="menu-item-image"><img loading="lazy" decoding="async" src="../assets/images/YAMASEN MENU PHOTOS/salad/KARAAGE Chicken Caesar Salad.png" alt="Karaage Chicken Caesar Salad"></div>
+                <div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">KARAAGE Chicken Caesar Salad</div></div><div class="menu-item-price">36k</div></div></div>
+              </article>
+            </div>
+          </div>
+
+          <div class="menu-category">
+            <div class="menu-cat-title">FRIED DISHES</div>
+            <div class="menu-grid">
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span><img src="/assets/images/YAMASEN MENU PHOTOS/yamazen_fried_chiken/Mixed Seafood TEMPURA.png" alt=""></span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Prawn TEMPURA</div></div><div class="menu-item-price">55k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Red Snapper TEMPURA</div></div><div class="menu-item-price">53k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Mixed Seafood TEMPURA</div></div><div class="menu-item-price">53k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Chicken TEMPURA</div></div><div class="menu-item-price">43k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Vegetable TEMPURA</div></div><div class="menu-item-price">35k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Fried Nile Perch KARAAGE</div></div><div class="menu-item-price">35k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Fried Chicken KARAAGE</div></div><div class="menu-item-price">42k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">TONKATSU Pork Fillet Cutlet</div></div><div class="menu-item-price">60k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">TONKATSU Pork Chop Cutlet</div></div><div class="menu-item-price">60k</div></div></div></article>
+            </div>
+          </div>
+
+          <div class="menu-category">
+            <div class="menu-cat-title">MISO SOUP</div>
+            <div class="menu-grid">
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span><img src="/assets/images/YAMASEN MENU PHOTOS/miso_soup/Okra & Mushroom.png" alt=""></span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Japanese Greens</div></div><div class="menu-item-price">12k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">WAKAME Seaweed</div></div><div class="menu-item-price">12k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Deep Fried Egg &amp; Tomato</div></div><div class="menu-item-price">12k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Pork &amp; Vegetables</div></div><div class="menu-item-price">12k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Salmon ARA (Offcuts)</div></div><div class="menu-item-price">12k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">TOFU</div></div><div class="menu-item-price">12k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Fried TOFU</div></div><div class="menu-item-price">12k</div></div></div></article>
+            </div>
+          </div>
+
+          <div class="menu-category">
+            <div class="menu-cat-title">VEGETABLE SOUP</div>
+            <div class="menu-grid">
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Seasonal Vegetables</div></div><div class="menu-item-price">12k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">WAKAME &amp; Sesame</div></div><div class="menu-item-price">12k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Okra &amp; Mushroom</div></div><div class="menu-item-price">12k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">TOFU</div></div><div class="menu-item-price">12k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Fried TOFU</div></div><div class="menu-item-price">12k</div></div></div></article>
+            </div>
+          </div>
+
+          <div class="menu-category">
+            <div class="menu-cat-title">KIDS PLATE</div>
+            <div class="menu-grid">
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">YAMASEN Kids Plate</div></div><div class="menu-item-price">37k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">KTEKK Kids Plate</div></div><div class="menu-item-price">37k</div></div></div></article>
+            </div>
+          </div>
+        </div>
+
+        <!-- SUSHI & SASHIMI -->
+        <div id="sushi" class="menu-panel" role="tabpanel">
+          <div class="menu-category">
+            <div class="menu-cat-title">NIGIRI SUSHI (4pcs each)</div>
+            <div class="menu-grid">
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Salmon</div></div><div class="menu-item-price">55k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Tuna</div></div><div class="menu-item-price">50k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Grouper</div></div><div class="menu-item-price">50k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Squid</div></div><div class="menu-item-price">50k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Prawn</div></div><div class="menu-item-price">50k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Octopus</div></div><div class="menu-item-price">40k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Tilapia</div></div><div class="menu-item-price">40k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Egg</div></div><div class="menu-item-price">30k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Roasted Beef</div></div><div class="menu-item-price">40k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Chicken</div></div><div class="menu-item-price">40k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Seared Beef</div></div><div class="menu-item-price">50k</div></div></div></article>
+            </div>
+          </div>
+
+          <div class="menu-category">
+            <div class="menu-cat-title">SASHIMI</div>
+            <div class="menu-grid">
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Salmon SASHIMI - 5pcs</div></div><div class="menu-item-price">56k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Salmon SASHIMI - 8pcs</div></div><div class="menu-item-price">82k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Tuna SASHIMI - 5pcs</div></div><div class="menu-item-price">54k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Tuna SASHIMI - 8pcs</div></div><div class="menu-item-price">82k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Octopus SASHIMI</div></div><div class="menu-item-price">54k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Tilapia SASHIMI Ethiopian Style</div></div><div class="menu-item-price">54k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Grouper Carpaccio</div></div><div class="menu-item-price">62k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">TATAKI Smoked Tuna</div></div><div class="menu-item-price">62k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">TATAKI Smoked King Fish</div></div><div class="menu-item-price">62k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Ceviche Ugandan-Japanese Style</div></div><div class="menu-item-price">62k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Tuna NAMEROU Tartar</div></div><div class="menu-item-price">62k</div></div></div></article>
+            </div>
+          </div>
+
+          <div class="menu-category">
+            <div class="menu-cat-title">SUSHI ROLLS (6pcs each)</div>
+            <div class="menu-grid">
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Avocado</div></div><div class="menu-item-price">18k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Cucumber</div></div><div class="menu-item-price">18k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Carrot</div></div><div class="menu-item-price">18k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">WASABI</div></div><div class="menu-item-price">18k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Tuna</div></div><div class="menu-item-price">22k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Salmon</div></div><div class="menu-item-price">22k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">White Fish</div></div><div class="menu-item-price">22k</div></div></div></article>
+            </div>
+          </div>
+
+          <div class="menu-category">
+            <div class="menu-cat-title">KABURI MAKI</div>
+            <div class="menu-grid">
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">TERIYAKI Eggplant Roll - 8pcs</div></div><div class="menu-item-price">30k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Kachumbali Roll - 8pcs</div></div><div class="menu-item-price">30k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Ceviche Roll - 8pcs</div></div><div class="menu-item-price">42k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Roasted Beef Roll - 8pcs</div></div><div class="menu-item-price">42k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Salmon Dragon Roll - 8pcs</div></div><div class="menu-item-price">65k</div></div></div></article>
+            </div>
+          </div>
+
+          <div class="menu-category">
+            <div class="menu-cat-title">URA MAKI</div>
+            <div class="menu-grid">
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Salmon Skin &amp; Lemon Roll - 5pcs</div></div><div class="menu-item-price">54k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Super Spicy Tuna &amp; Salmon Roll - 5pcs</div></div><div class="menu-item-price">42k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">DASHIMAKI Omelette Roll - 8pcs</div></div><div class="menu-item-price">28k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Spicy Chili Squid Roll - 8pcs</div></div><div class="menu-item-price">40k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">TOFU Cutlet Roll - 8pcs</div></div><div class="menu-item-price">40k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Cooked Salmon Roll - 8pcs</div></div><div class="menu-item-price">40k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Cooked Tuna Roll - 8pcs</div></div><div class="menu-item-price">40k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">KAIGAI Roll - 8pcs</div></div><div class="menu-item-price">25k</div></div></div></article>
+            </div>
+          </div>
+
+          <div class="menu-category">
+            <div class="menu-cat-title">AGE MAKI (Fried)</div>
+            <div class="menu-grid">
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Fried Vegetable Roll - 5pcs</div></div><div class="menu-item-price">42k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Fried Prawn Roll - 5pcs</div></div><div class="menu-item-price">42k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">PANKO Seafood Roll - 5pcs</div></div><div class="menu-item-price">62k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">PANKO Prawns Roll - 8pcs</div></div><div class="menu-item-price">58k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">TONKATSU Pork Cutlet Roll - 8pcs</div></div><div class="menu-item-price">42k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Chicken Cutlet Roll - 8pcs</div></div><div class="menu-item-price">42k</div></div></div></article>
+            </div>
+          </div>
+
+          <div class="menu-category">
+            <div class="menu-cat-title">CHU MAKI</div>
+            <div class="menu-grid">
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Tuna &amp; Amber Yolk Roll - 5pcs</div></div><div class="menu-item-price">62k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Salmon &amp; Amber Yolk Roll - 5pcs</div></div><div class="menu-item-price">62k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Okra &amp; Squid &amp; Amber Yolk Roll - 5pcs</div></div><div class="menu-item-price">40k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Vegetable Roll - 5pcs</div></div><div class="menu-item-price">40k</div></div></div></article>
+            </div>
+          </div>
+        </div>
+
+        <!-- PLATTERS -->
+        <div id="platters" class="menu-panel" role="tabpanel">
+          <div class="menu-category">
+            <div class="menu-cat-title">SUSHI PLATTERS</div>
+            <div class="menu-grid">
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add platter image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">TEMAKI SUSHI Platter</div></div><div class="menu-item-price">150k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add platter image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Vegetable SUSHI Platter (31pcs)</div></div><div class="menu-item-price">150k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add platter image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Vegetable SUSHI Platter (44pcs)</div></div><div class="menu-item-price">180k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add platter image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Cooked SUSHI Platter</div></div><div class="menu-item-price">220k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add platter image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Meat SUSHI Platter</div></div><div class="menu-item-price">200k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add platter image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">SUSHI Roll Platter</div></div><div class="menu-item-price">400k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add platter image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Tanzania Seafood Platter</div></div><div class="menu-item-price">800k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add platter image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Salmon TEMAKI SUSHI</div></div><div class="menu-item-price">85k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add platter image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">YAMASEN NIGIRI SUSHI</div></div><div class="menu-item-price">120k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add platter image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Tuna SUSHI Platter</div></div><div class="menu-item-price">120k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add platter image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Salmon SUSHI Platter</div></div><div class="menu-item-price">120k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add platter image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Salmon &amp; Tuna SUSHI Platter</div></div><div class="menu-item-price">120k</div></div></div></article>
+            </div>
+          </div>
+        </div>
+
+        <!-- BOWLS & NOODLES -->
+        <div id="bowls" class="menu-panel" role="tabpanel">
+          <div class="menu-category">
+            <div class="menu-cat-title">RAMEN SOUP NOODLES</div>
+            <div class="menu-grid">
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Pork SOY Sauce RAMEN</div></div><div class="menu-item-price">45k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Chicken Salt RAMEN</div></div><div class="menu-item-price">45k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Chicken SOY Sauce RAMEN</div></div><div class="menu-item-price">45k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Vegetable Soy Sauce RAMEN</div></div><div class="menu-item-price">45k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">KAEDAMA - Extra Noodle</div></div><div class="menu-item-price">15k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Frozen RAMEN (Takeaway)</div></div><div class="menu-item-price">28k</div></div></div></article>
+            </div>
+          </div>
+
+          <div class="menu-category">
+            <div class="menu-cat-title">DONBURI RICE BOWLS</div>
+            <div class="menu-grid">
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add bowl image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Chicken TERIYAKI DONBURI</div></div><div class="menu-item-price">42k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add bowl image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Beef Tongue DONBURI</div></div><div class="menu-item-price">42k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add bowl image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Roasted Beef DONBURI</div></div><div class="menu-item-price">42k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add bowl image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Avocado DONBURI</div></div><div class="menu-item-price">30k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add bowl image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Salmon Tartar DONBURI</div></div><div class="menu-item-price">53k</div></div></div></article>
+            </div>
+          </div>
+
+          <div class="menu-category">
+            <div class="menu-cat-title">CURRY &amp; RICE</div>
+            <div class="menu-grid">
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">TONKATSU Pork Chop Curry</div></div><div class="menu-item-price">45k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Vegetable Curry</div></div><div class="menu-item-price">37k</div></div></div></article>
+            </div>
+          </div>
+
+          <div class="menu-category">
+            <div class="menu-cat-title">MEAL PLATE</div>
+            <div class="menu-grid">
+              <article class="menu-item reveal">
+                <div class="menu-item-image placeholder"><span>Add menu image</span></div>
+                <div class="menu-item-content">
+                  <div class="menu-item-header">
+                    <div class="menu-item-info"><div class="menu-item-name">Rice + Main Course of Your Choice</div></div>
+                    <div class="menu-item-price">45k</div>
+                  </div>
+                  <div class="menu-item-desc">Choices: KARAAGE Chicken, Chicken NAN-BAN, Roasted Beef, Fried Fish, Spring Rolls, Roasted Pork, Braised Pork Belly, TONKATSU Pork Cutlet, CHU-KA, Vegetarian.</div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <!-- SETS & BENTO -->
+        <div id="sets" class="menu-panel" role="tabpanel">
+          <div class="menu-category">
+            <div class="menu-cat-title">RICE &amp; SOUP SET</div>
+            <div class="menu-grid">
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Plain Rice and Soup Set</div></div><div class="menu-item-price">25k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">TAKIKOMI GOHAN and Soup Set</div><div class="menu-item-jp">Japanese Pilaf</div></div><div class="menu-item-price">25k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Plain Rice Only</div></div><div class="menu-item-price">12k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">TAKIKOMI GOHAN Only</div><div class="menu-item-jp">Japanese Pilaf</div></div><div class="menu-item-price">15k</div></div></div></article>
+            </div>
+          </div>
+
+          <div class="menu-category">
+            <div class="menu-cat-title">SHOKADO BENTO</div>
+            <div class="menu-grid">
+              <article class="menu-item reveal">
+                <div class="menu-item-image placeholder"><span>Add bento image</span></div>
+                <div class="menu-item-content">
+                  <div class="menu-item-header">
+                    <div class="menu-item-info"><div class="menu-item-name">Bento Box</div></div>
+                    <div class="menu-item-price">100k</div>
+                  </div>
+                  <div class="menu-item-desc">Reservation 3 days in advance. Minimum 2 persons.</div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <!-- SPECIALS -->
+        <div id="specials" class="menu-panel" role="tabpanel">
+          <div class="menu-category">
+            <div class="menu-cat-title">YAMASEN FRIED CHICKEN</div>
+            <div class="menu-grid">
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">YFC Plate</div><div class="menu-item-jp">with Potato Wedges</div></div><div class="menu-item-price">40k</div></div></div></article>
+              <article class="menu-item reveal"><div class="menu-item-image placeholder"><span>Add menu image</span></div><div class="menu-item-content"><div class="menu-item-header"><div class="menu-item-info"><div class="menu-item-name">Whole YFC</div><div class="menu-item-jp">with Grilled Vegetables</div></div><div class="menu-item-price">150k</div></div></div></article>
+            </div>
+          </div>
+
+          <div class="menu-category">
+            <div class="menu-cat-title">NANAMEYAKI BBQ</div>
+            <div class="menu-grid">
+              <article class="menu-item reveal">
+                <div class="menu-item-image placeholder"><span>Add BBQ image</span></div>
+                <div class="menu-item-content">
+                  <div class="menu-item-header">
+                    <div class="menu-item-info"><div class="menu-item-name">Single Plan</div><div class="menu-item-jp">Chicken, Pork, or Beef</div></div>
+                    <div class="menu-item-price">100k</div>
+                  </div>
+                </div>
+              </article>
+              <article class="menu-item reveal">
+                <div class="menu-item-image placeholder"><span>Add BBQ image</span></div>
+                <div class="menu-item-content">
+                  <div class="menu-item-header">
+                    <div class="menu-item-info"><div class="menu-item-name">Course Plan</div></div>
+                    <div class="menu-item-price">200k</div>
+                  </div>
+                  <div class="menu-item-desc">Reservation 3 days in advance. Minimum 2 persons.</div>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="menu-category">
+            <div class="menu-cat-title">OMAKASE - CHEF'S SPECIAL DINNER</div>
+            <div class="menu-grid">
+              <article class="menu-item reveal">
+                <div class="menu-item-image placeholder"><span>Add omakase image</span></div>
+                <div class="menu-item-content">
+                  <div class="menu-item-header">
+                    <div class="menu-item-info"><div class="menu-item-name">Standard</div><div class="menu-item-jp">7 courses + Dessert</div></div>
+                    <div class="menu-item-price">200k</div>
+                  </div>
+                </div>
+              </article>
+              <article class="menu-item reveal">
+                <div class="menu-item-image placeholder"><span>Add omakase image</span></div>
+                <div class="menu-item-content">
+                  <div class="menu-item-header">
+                    <div class="menu-item-info"><div class="menu-item-name">Luxury</div><div class="menu-item-jp">9 courses + Dessert</div></div>
+                    <div class="menu-item-price">300k</div>
+                  </div>
+                  <div class="menu-item-desc">Reservation 3 days in advance. Minimum 2 persons.</div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <p style="margin-top:40px; font-size:12px; color:var(--warm-gray); border-top:1px solid var(--border); padding-top:24px;">
+          All prices in UGX (000s). Some image slots are placeholders and can be replaced with your final menu photography.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-placeholder"></div>
+  <div class="toast" id="toast" role="alert" aria-live="polite"></div>
+  <script src="../js/main.js"></script>
+  <script src="../js/layout.js"></script>
+  <script>injectLayout(false);</script>
+</body>
+</html>
