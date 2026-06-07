@@ -171,6 +171,98 @@ function updateOrderTotal() {
   if (typeof updateSummary === 'function') updateSummary();
 }
 
+// ── HIGHLIGHTS CAROUSEL (index) ──
+function initHighlightsCarousel() {
+  const stage = document.querySelector('.highlights-stage');
+  const carousel = document.querySelector('.highlights-carousel');
+  const track = document.getElementById('highlightsTrack');
+  const dotsContainer = document.getElementById('highlightsDots');
+  const thumbsContainer = document.getElementById('highlightsThumbs');
+  const counterEl = document.getElementById('highlightsCounter');
+  const filtersEl = document.getElementById('highlightsFilters');
+  const prevBtn = document.getElementById('highlightsPrev');
+  const nextBtn = document.getElementById('highlightsNext');
+  if (!carousel || !track || !dotsContainer) return;
+
+  const slides = [...track.querySelectorAll('.highlight-slide')];
+  let index = 0;
+
+  function pad(n) { return String(n).padStart(2, '0'); }
+
+  slides.forEach((slide, i) => {
+    const dot = document.createElement('button');
+    dot.type = 'button';
+    dot.className = 'highlights-dot' + (i === 0 ? ' is-active' : '');
+    dot.setAttribute('role', 'tab');
+    dot.setAttribute('aria-label', `Slide ${i + 1} of ${slides.length}`);
+    dot.setAttribute('aria-selected', i === 0 ? 'true' : 'false');
+    dot.addEventListener('click', () => goTo(i));
+    dotsContainer.appendChild(dot);
+
+    if (thumbsContainer) {
+      const img = slide.querySelector('.highlight-slide-media img');
+      const name = slide.dataset.thumbName || `Dish ${i + 1}`;
+      const thumb = document.createElement('button');
+      thumb.type = 'button';
+      thumb.className = 'highlights-thumb' + (i === 0 ? ' is-active' : '');
+      thumb.setAttribute('role', 'tab');
+      thumb.setAttribute('aria-label', name);
+      thumb.innerHTML = `<img class="highlights-thumb-img" src="${img?.src || ''}" alt="" loading="lazy"><span class="highlights-thumb-name">${name}</span>`;
+      thumb.addEventListener('click', () => goTo(i));
+      thumbsContainer.appendChild(thumb);
+    }
+  });
+
+  const dots = [...dotsContainer.querySelectorAll('.highlights-dot')];
+  const thumbs = thumbsContainer ? [...thumbsContainer.querySelectorAll('.highlights-thumb')] : [];
+
+  function updateCounter(i) {
+    if (counterEl) counterEl.innerHTML = `${pad(i + 1)} <span>/ ${pad(slides.length)}</span>`;
+  }
+
+  function setActive(i) {
+    slides.forEach((s, n) => s.classList.toggle('is-active', n === i));
+    dots.forEach((d, n) => {
+      d.classList.toggle('is-active', n === i);
+      d.setAttribute('aria-selected', n === i ? 'true' : 'false');
+    });
+    thumbs.forEach((t, n) => {
+      t.classList.toggle('is-active', n === i);
+      if (n === i) t.scrollIntoView({ block: 'nearest', inline: 'center' });
+    });
+    updateCounter(i);
+  }
+
+  function goTo(i) {
+    index = ((i % slides.length) + slides.length) % slides.length;
+    track.style.transform = `translateX(-${index * 100}%)`;
+    setActive(index);
+  }
+
+  function next() { goTo(index + 1); }
+  function prev() { goTo(index - 1); }
+
+  filtersEl?.querySelectorAll('.highlights-filter').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const filter = btn.dataset.filter;
+      filtersEl.querySelectorAll('.highlights-filter').forEach(b => b.classList.remove('is-active'));
+      btn.classList.add('is-active');
+      if (filter === 'all') {
+        goTo(0);
+        return;
+      }
+      const match = slides.findIndex(s => s.dataset.category === filter);
+      if (match >= 0) goTo(match);
+    });
+  });
+
+  prevBtn?.addEventListener('click', () => prev());
+  nextBtn?.addEventListener('click', () => next());
+
+  setActive(0);
+}
+initHighlightsCarousel();
+
 // ── ACTIVE NAV LINK ──
 const currentPage = window.location.pathname.split('/').pop() || 'index.html';
 document.querySelectorAll('.nav-links a').forEach(a => {

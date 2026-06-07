@@ -6,6 +6,8 @@
   <title>Loyalty Card — Yamasen Japanese Restaurant</title>
   <meta name="description" content="Join Yamasen's loyalty membership. Earn stamps, win prizes including Omakase dinner, vouchers and more.">
   <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="../icons/icon-192.png">
   <style>
     .stamp-card {
       background: var(--ink); color: var(--rice);
@@ -27,7 +29,7 @@
       transition: all 0.3s; cursor: default;
     }
     .stamp.filled { border-color: var(--primary); color: var(--primary); }
-    .stamp.lottery { border-color: var(--primary); background: rgba(136,0,0,0.1); color: var(--primary); }
+    .stamp.lottery { border-color: var(--primary); background: rgba(var(--primary-rgb), 0.1); color: var(--primary); }
     .how-steps { display: grid; grid-template-columns: repeat(3,1fr); gap: 32px; margin-top: 48px; }
     .how-step { text-align: center; }
     .how-num { font-family: var(--font-serif); font-size: 48px; color: var(--primary); opacity: 0.4; margin-bottom: 12px; }

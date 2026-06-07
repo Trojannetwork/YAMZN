@@ -12,7 +12,11 @@ const ASSETS = [
   '/pages/loyalty.html',
   '/pages/about.html',
   '/pages/contact.html',
-  '/manifest.json'
+  '/manifest.json',
+  '/assets/images/yamasen-logo.png',
+  '/icons/favicon-32.png',
+  '/icons/icon-192.png',
+  '/icons/icon-512.png'
 ];
 
 self.addEventListener('install', e => {

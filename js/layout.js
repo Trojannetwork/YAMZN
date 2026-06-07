@@ -2,8 +2,7 @@
 const NAV_HTML = `
 <nav role="navigation" aria-label="Main navigation">
   <a href="../index.html" class="nav-logo" aria-label="Yamasen home">
-    <span class="jp">山仙</span>
-    <span class="en">Yamasen</span>
+    <img src="../assets/images/yamasen-logo.png" alt="Yamasen" class="nav-logo-img" width="120" height="40">
   </a>
   <ul class="nav-links" id="navLinks" role="list">
     <li><a href="../pages/food-menu.html">Food Menu</a></li>
@@ -29,8 +28,10 @@ const FOOTER_HTML = `
   <div class="container">
     <div class="footer-grid">
       <div>
-        <div class="footer-logo">山仙</div>
-        <div class="footer-tagline" style="margin-bottom:8px;">YAMASEN Japanese Restaurant</div>
+        <a href="../index.html" class="footer-logo" aria-label="Yamasen home">
+          <img src="../assets/images/yamasen-logo.png" alt="Yamasen" class="footer-logo-img" width="140" height="48">
+        </a>
+        <div class="footer-tagline" style="margin-bottom:8px;">Japanese Restaurant · Muyenga</div>
         <div style="font-size:12px;color:rgba(245,240,232,0.4);line-height:1.8;margin-top:16px;">
           Tank Hill Park, Tank Hill Road<br>Muyenga, Kampala<br>
           Mon–Sun 9:00–23:00<br>
@@ -72,10 +73,13 @@ const FOOTER_HTML = `
 // For index.html (paths differ)
 const NAV_HTML_ROOT = NAV_HTML
   .replace(/href="\.\.\/pages\//g, 'href="pages/')
-  .replace(/href="\.\.\/index\.html"/g, 'href="index.html"');
+  .replace(/href="\.\.\/index\.html"/g, 'href="index.html"')
+  .replace(/\.\.\/assets\//g, 'assets/');
 
 const FOOTER_HTML_ROOT = FOOTER_HTML
-  .replace(/href="\.\.\/pages\//g, 'href="pages/');
+  .replace(/href="\.\.\/pages\//g, 'href="pages/')
+  .replace(/href="\.\.\/index\.html"/g, 'href="index.html"')
+  .replace(/\.\.\/assets\//g, 'assets/');
 
 function injectLayout(isRoot = false) {
   const navPlaceholder = document.getElementById('nav-placeholder');

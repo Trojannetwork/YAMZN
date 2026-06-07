@@ -9,7 +9,10 @@
   <meta property="og:description" content="Authentic Japanese dining in Muyenga, Kampala">
   <meta property="og:type" content="restaurant">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
   <link rel="manifest" href="manifest.json">
+  <meta property="og:image" content="assets/images/yamasen-logo.png">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -33,13 +36,15 @@
 <body>
   <div id="nav-placeholder"></div>
 
-  <!-- HERO -->
+  <!-- HERO + HIGHLIGHTS (fluid scroll) -->
   <main>
+    <div class="home-intro-flow">
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-content">
         <p class="hero-tag">Tank Hill Park · Muyenga · Kampala</p>
-        <h1 class="hero-title" id="hero-title">山仙</h1>
-        <p class="hero-subtitle">Yamasen · Japanese Restaurant</p>
+        <h1 class="hero-brand" id="hero-title">
+          <img src="assets/images/yamasen-logo-white.png" alt="Yamasen Japanese Restaurant" class="hero-logo" width="320" height="120">
+        </h1>
         <p class="hero-info">Tank Hill Road, Muyenga, Kampala</p>
         <p class="hero-hours">Mon – Sun &nbsp; 9:00 – 23:00 &nbsp;／&nbsp; +256 0707 808 010</p>
         <div class="hero-actions">
@@ -54,42 +59,179 @@
       </div>
     </section>
 
-    <!-- SPECIAL MENU -->
     <section class="special-section" aria-labelledby="special-title">
+      <div class="highlights-watermark" aria-hidden="true">今日</div>
+      <div class="highlights-orb highlights-orb--1" aria-hidden="true"></div>
+      <div class="highlights-orb highlights-orb--2" aria-hidden="true"></div>
+
       <div class="container">
-        <span class="section-label reveal">Limited Special Menu</span>
-        <h2 class="section-title reveal" id="special-title">Today's Highlights</h2>
-        <div class="section-line reveal" aria-hidden="true"></div>
-        <div class="special-grid">
-          <div class="special-image-card reveal">
-            <img src="assets/images/c-timothy-latim.jpg" alt="Warm dining atmosphere at Yamasen" class="special-image" loading="lazy">
+        <header class="highlights-header reveal">
+          <div class="highlights-header-top">
+            <div>
+              <span class="section-label">Limited Special Menu</span>
+              <h2 class="section-title" id="special-title">Today's Highlights</h2>
+            </div>
+            <p class="highlights-intro">Seasonal picks · Open daily 9:00–23:00</p>
           </div>
-          <article class="special-card reveal">
-            <div class="special-card-jp">燻製がっこ</div>
-            <div class="special-card-en">Iburi Gakko</div>
-            <p class="special-card-desc">Smoked pickled daikon — a beloved Akita specialty. Slow-smoked over cherry wood with a satisfying crunch and deep umami finish.</p>
-            <span class="delivery-badge">Available for Delivery</span>
-          </article>
-          <article class="special-card reveal">
-            <div class="special-card-jp">弁当箱</div>
-            <div class="special-card-en">Yamasen Bento Box</div>
-            <p class="special-card-desc">Our signature bento featuring seasonal mains, pickles, rice, and a dessert — curated daily from what our farm delivers that morning.</p>
-            <span class="delivery-badge">Available for Delivery</span>
-          </article>
-          <article class="special-card reveal">
-            <div class="special-card-jp">お任せ</div>
-            <div class="special-card-en">Omakase Experience</div>
-            <p class="special-card-desc">Chef's selection — a seasonal tasting journey that follows the day's finest ingredients. Reservation required. Max 6 guests.</p>
-            <a href="pages/reservation.html" class="btn btn-outline" style="margin-top:24px;display:inline-block;color:var(--rice);border-color:var(--rice);">Reserve Now</a>
-          </article>
+          <p class="highlights-essentials">
+            <span>8 featured dishes</span>
+            <span class="highlights-essentials-sep" aria-hidden="true">·</span>
+            <span>Delivery available</span>
+            <span class="highlights-essentials-sep" aria-hidden="true">·</span>
+            <span>Farm to table</span>
+          </p>
+          <div class="highlights-filters" id="highlightsFilters" role="group" aria-label="Filter highlights">
+            <button type="button" class="highlights-filter is-active" data-filter="all">All</button>
+            <button type="button" class="highlights-filter" data-filter="bento">Bento</button>
+            <button type="button" class="highlights-filter" data-filter="omakase">Omakase</button>
+            <button type="button" class="highlights-filter" data-filter="ramen">Ramen</button>
+            <button type="button" class="highlights-filter" data-filter="salad">Salad</button>
+            <button type="button" class="highlights-filter" data-filter="mains">Mains</button>
+            <button type="button" class="highlights-filter" data-filter="donburi">Donburi</button>
+            <button type="button" class="highlights-filter" data-filter="sushi">Sushi</button>
+            <button type="button" class="highlights-filter" data-filter="curry">Curry</button>
+          </div>
+        </header>
+
+        <div class="highlights-stage reveal">
+          <div class="highlights-main">
+            <div class="highlights-carousel" aria-roledescription="carousel" aria-label="Today's special menu highlights">
+              <div class="highlights-viewport">
+                <div class="highlights-track" id="highlightsTrack">
+                  <article class="highlight-slide" data-slide="0" data-category="bento" data-thumb-name="Shokado Bento">
+                    <div class="highlight-slide-media">
+                      <span class="highlight-slide-badge">Chef's Pick</span>
+                      <img src="assets/images/YAMASEN MENU PHOTOS/shokado_bento /SHOKADO BENTO .png" alt="Shokado bento box with seasonal sides" loading="lazy">
+                    </div>
+                    <div class="highlight-slide-content">
+                      <div class="highlight-slide-tags"><span class="highlight-tag">Bento</span><span class="highlight-tag highlight-tag--gold">Premium</span></div>
+                      <div class="highlight-slide-jp">松花堂弁当</div>
+                      <div class="highlight-slide-en">Shokado Bento</div>
+                      <div class="highlight-slide-price">UGX 100,000</div>
+                      <p class="highlight-slide-desc">Seasonal mains, pickles, rice, and dessert in our signature lacquer box — curated from the morning's farm delivery.</p>
+                      <span class="delivery-badge">Available for Delivery</span>
+                    </div>
+                  </article>
+                  <article class="highlight-slide" data-slide="1" data-category="omakase" data-thumb-name="Omakase">
+                    <div class="highlight-slide-media">
+                      <span class="highlight-slide-badge highlight-slide-badge--reserve">Reservation</span>
+                      <img src="assets/images/YAMASEN MENU PHOTOS/omakase _ched's_ special_dinner/Screenshot 2026-04-19 at 13.50.55.png" alt="Omakase tasting course at Yamasen" loading="lazy">
+                    </div>
+                    <div class="highlight-slide-content">
+                      <div class="highlight-slide-tags"><span class="highlight-tag">Tasting</span><span class="highlight-tag">Max 6 guests</span></div>
+                      <div class="highlight-slide-jp">お任せ</div>
+                      <div class="highlight-slide-en">Omakase Experience</div>
+                      <div class="highlight-slide-price">By reservation</div>
+                      <p class="highlight-slide-desc">Chef's selection — a seasonal tasting journey following the day's finest ingredients. Max 6 guests.</p>
+                      <a href="pages/reservation.html" class="btn btn-outline highlight-slide-cta">Reserve Now</a>
+                    </div>
+                  </article>
+                  <article class="highlight-slide" data-slide="2" data-category="ramen" data-thumb-name="Pork Ramen">
+                    <div class="highlight-slide-media">
+                      <span class="highlight-slide-badge">Popular</span>
+                      <img src="assets/images/YAMASEN MENU PHOTOS/ramen_soup_noodle/Pork SOY Sauce RAMEN.png" alt="Pork soy sauce ramen" loading="lazy">
+                    </div>
+                    <div class="highlight-slide-content">
+                      <div class="highlight-slide-tags"><span class="highlight-tag">Ramen</span><span class="highlight-tag">Bestseller</span></div>
+                      <div class="highlight-slide-jp">醤油ラーメン</div>
+                      <div class="highlight-slide-en">Pork Soy Sauce Ramen</div>
+                      <div class="highlight-slide-price">UGX 45,000</div>
+                      <p class="highlight-slide-desc">Rich soy broth, springy noodles, and slow-braised pork — one of our most ordered bowls.</p>
+                      <span class="delivery-badge">Available for Delivery</span>
+                    </div>
+                  </article>
+                  <article class="highlight-slide" data-slide="3" data-category="salad" data-thumb-name="Farm Salad">
+                    <div class="highlight-slide-media">
+                      <span class="highlight-slide-badge highlight-slide-badge--farm">Farm Fresh</span>
+                      <img src="assets/images/YAMASEN MENU PHOTOS/salad/FARM TO TABLE.png" alt="Farm to Table salad" loading="lazy">
+                    </div>
+                    <div class="highlight-slide-content">
+                      <div class="highlight-slide-tags"><span class="highlight-tag">Salad</span><span class="highlight-tag highlight-tag--farm">Local greens</span></div>
+                      <div class="highlight-slide-jp">農園サラダ</div>
+                      <div class="highlight-slide-en">Farm to Table Salad</div>
+                      <div class="highlight-slide-price">UGX 38,000</div>
+                      <p class="highlight-slide-desc">Greens and vegetables from our circular farm system — fresh, local, and dressed with house-made dressing.</p>
+                      <span class="delivery-badge">Available for Delivery</span>
+                    </div>
+                  </article>
+                  <article class="highlight-slide" data-slide="4" data-category="mains" data-thumb-name="YFC Plate">
+                    <div class="highlight-slide-media">
+                      <span class="highlight-slide-badge">Signature</span>
+                      <img src="assets/images/YAMASEN MENU PHOTOS/yamazen_fried_chiken/YFC Plate .png" alt="Yamasen fried chicken plate" loading="lazy">
+                    </div>
+                    <div class="highlight-slide-content">
+                      <div class="highlight-slide-tags"><span class="highlight-tag">YFC</span><span class="highlight-tag">Sharing</span></div>
+                      <div class="highlight-slide-jp">山仙フライドチキン</div>
+                      <div class="highlight-slide-en">YFC Plate</div>
+                      <div class="highlight-slide-price">UGX 40,000</div>
+                      <p class="highlight-slide-desc">Crispy karaage-style chicken with potato wedges — our signature comfort plate, perfect for sharing.</p>
+                      <span class="delivery-badge">Available for Delivery</span>
+                    </div>
+                  </article>
+                  <article class="highlight-slide" data-slide="5" data-category="donburi" data-thumb-name="Teriyaki Don">
+                    <div class="highlight-slide-media">
+                      <img src="assets/images/YAMASEN MENU PHOTOS/donburi_ricebowls/Chicken TERIYAKI DONBURI.png" alt="Chicken teriyaki donburi" loading="lazy">
+                    </div>
+                    <div class="highlight-slide-content">
+                      <div class="highlight-slide-tags"><span class="highlight-tag">Donburi</span><span class="highlight-tag">Lunch</span></div>
+                      <div class="highlight-slide-jp">照り焼き丼</div>
+                      <div class="highlight-slide-en">Chicken Teriyaki Donburi</div>
+                      <div class="highlight-slide-price">UGX 42,000</div>
+                      <p class="highlight-slide-desc">Glazed teriyaki chicken over steamed rice with pickles — a hearty lunch favourite.</p>
+                      <span class="delivery-badge">Available for Delivery</span>
+                    </div>
+                  </article>
+                  <article class="highlight-slide" data-slide="6" data-category="sushi" data-thumb-name="Nigiri Sushi">
+                    <div class="highlight-slide-media">
+                      <span class="highlight-slide-badge highlight-slide-badge--gold">Premium</span>
+                      <img src="assets/images/YAMASEN MENU PHOTOS/sushi_plater/YAMASEN NIGIRI SUSHI.png" alt="Yamasen nigiri sushi platter" loading="lazy">
+                    </div>
+                    <div class="highlight-slide-content">
+                      <div class="highlight-slide-tags"><span class="highlight-tag">Sushi</span><span class="highlight-tag">Platter</span></div>
+                      <div class="highlight-slide-jp">握り寿司</div>
+                      <div class="highlight-slide-en">Yamasen Nigiri Sushi</div>
+                      <div class="highlight-slide-price">UGX 120,000</div>
+                      <p class="highlight-slide-desc">Chef-selected nigiri showcasing the day's best fish — elegant, minimal, and impeccably balanced.</p>
+                      <span class="delivery-badge">Available for Delivery</span>
+                    </div>
+                  </article>
+                  <article class="highlight-slide" data-slide="7" data-category="curry" data-thumb-name="Tonkatsu Curry">
+                    <div class="highlight-slide-media">
+                      <img src="assets/images/YAMASEN MENU PHOTOS/curry_rice/TONKATSU Pork Chop Curry.png" alt="Tonkatsu pork chop curry" loading="lazy">
+                    </div>
+                    <div class="highlight-slide-content">
+                      <div class="highlight-slide-tags"><span class="highlight-tag">Curry</span><span class="highlight-tag">Comfort</span></div>
+                      <div class="highlight-slide-jp">カツカレー</div>
+                      <div class="highlight-slide-en">Tonkatsu Pork Chop Curry</div>
+                      <div class="highlight-slide-price">UGX 45,000</div>
+                      <p class="highlight-slide-desc">Crispy breaded pork cutlet over Japanese curry rice — warming, bold, and deeply satisfying.</p>
+                      <span class="delivery-badge">Available for Delivery</span>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+
+            <div class="highlights-nav-row">
+              <div class="highlights-thumbs" id="highlightsThumbs" role="tablist" aria-label="Jump to highlight"></div>
+              <div class="highlights-controls">
+                <button type="button" class="highlights-btn highlights-prev" aria-label="Previous highlight" id="highlightsPrev">‹</button>
+                <div class="highlights-dots" id="highlightsDots" role="tablist" aria-label="Choose highlight slide"></div>
+                <span class="highlights-counter" id="highlightsCounter" aria-live="polite">01 <span>/ 08</span></span>
+                <button type="button" class="highlights-btn highlights-next" aria-label="Next highlight" id="highlightsNext">›</button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div style="text-align:center; margin-top:48px;">
-          <a href="pages/delivery.html" class="btn btn-gold">Order Delivery Now</a>
-          &nbsp;&nbsp;
-          <a href="pages/food-menu.html" class="btn btn-outline" style="color:var(--rice);border-color:var(--rice);">Full Food Menu</a>
+
+        <div class="highlights-actions reveal">
+          <a href="pages/delivery.html" class="highlights-action-link">Order Delivery</a>
+          <a href="pages/food-menu.html" class="highlights-action-link">Full Food Menu</a>
+          <a href="pages/reservation.html" class="highlights-action-link highlights-action-link--accent">Reserve a Table</a>
         </div>
       </div>
     </section>
+    </div>
 
     <!-- LOYALTY -->
     <section class="loyalty-section" aria-labelledby="loyalty-title">
